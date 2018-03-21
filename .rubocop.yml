@@ -6,3 +6,7 @@ Metrics/LineLength:
 
 Documentation:
   Enabled: false
+
+AllCops:
+  Exclude:
+    - 'db/**/*'
