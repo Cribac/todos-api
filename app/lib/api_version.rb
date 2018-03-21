@@ -1,5 +1,4 @@
 class ApiVersion
-
   attr_reader :version, :default
 
   def initialize(version, default = false)
