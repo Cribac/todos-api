@@ -1,5 +1,6 @@
-class ApiVersion
+# frozen_string_literal: true
 
+class ApiVersion
   attr_reader :version, :default
 
   def initialize(version, default = false)

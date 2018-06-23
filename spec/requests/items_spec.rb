@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
+# rubocop:disable Metrics/BlockLength
 RSpec.describe 'Items API' do
   # Initialize the test data
   let(:user) { create(:user) }
@@ -8,7 +11,6 @@ RSpec.describe 'Items API' do
   let(:todo_id) { todo.id }
   let(:id) { items.first.id }
   let(:headers) { valid_headers }
-
 
   # Test suite for GET /todos/:todo_id/items
   describe 'GET /todos/:todo_id/items' do
@@ -128,3 +130,4 @@ RSpec.describe 'Items API' do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength

@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
+# rubocop:disable Metrics/BlockLength
 RSpec.describe 'Todos API', type: :request do
   # add todos owner
   let(:user) { create(:user) }
@@ -112,3 +115,4 @@ RSpec.describe 'Todos API', type: :request do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
