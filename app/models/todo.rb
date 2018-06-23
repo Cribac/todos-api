@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Todo < ApplicationRecord
   # Model association
   has_many :items, dependent: :destroy

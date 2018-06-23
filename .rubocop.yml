@@ -1,0 +1,12 @@
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 85
+
+Documentation:
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - 'db/**/*'
